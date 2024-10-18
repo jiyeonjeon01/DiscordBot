@@ -20,11 +20,11 @@ async def on_ready():
 
 @bot.command()
 async def 안녕(ctx):
-    await ctx.send('>>> 안녕하세요! 코코봇이에요^^* ''!도움'' 이라는 명령어로 명령어 목록을 보여줄게요')
+    await ctx.send('>>> 안녕하세요! 코코봇이에요~^^  ''!도움'' 이라는 명령어로 명령어 목록을 보여줄게요.')
 
 @bot.command()
 async def 누구(ctx):
-    await ctx.send('>>> 도박을 하고싶은데 돈이없어서 만든 봇이에요')    
+    await ctx.send('>>> 도박을 하고싶은데 돈이없어서 만든 봇이에요.')    
 
 @bot.command()
 async def 돈줘(ctx):
