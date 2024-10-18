@@ -44,6 +44,8 @@ VSC, SourceTree
 <img src="https://github.com/user-attachments/assets/4008c68e-2d7f-401a-8ed3-5255fe5500a2"
 style="width:80%; height:80%;" />
 </div>
+
+<br>
    
 <div>   
 3. '!누구' 입출력
@@ -52,6 +54,8 @@ style="width:80%; height:80%;" />
 style="width:80%; height:80%;" />
 </div>
 
+<br>
+
 <div>
 4. '!돈줘' 입출력
 <br>
@@ -59,11 +63,15 @@ style="width:80%; height:80%;" />
 style="width:80%; height:80%;" />
 </div>
 
+<br>
+
 <div>
 5. '!도박 (숫자)' 입출력  (승 : 패 = 45 : 55)
 <br>
 <img src="https://github.com/user-attachments/assets/aaef9598-bd3a-4715-b4f6-f9b86446f24a"
 style="width:80%; height:80%;" />
 </div>
+
+<br>
 
 </div>
