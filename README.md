@@ -72,6 +72,16 @@ style="width:80%; height:80%;" />
 style="width:80%; height:80%;" />
 </div>
 
+<div>
+6. '!따라해 [메세지]' 입출력
+<br>
+<img src="https://github.com/user-attachments/assets/64cfada3-38e7-4502-9c3d-5ce509414cdc" 
+style="width:80%; height:80%;" />
+<br>
+<img src="https://github.com/user-attachments/assets/ad25c3f5-57ea-4ff7-99e7-af6909408f0d"
+style="width:80%; height:80%;"> 
+</div>
+
 <br>
 
 </div>
