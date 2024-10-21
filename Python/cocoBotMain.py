@@ -20,11 +20,11 @@ async def on_ready():
 
 @bot.command()
 async def 안녕(ctx):
-    await ctx.send('>>> 안녕하세요! 코코봇이에요~^^  ''!도움'' 이라는 명령어로 명령어 목록을 보여줄게요.')
+    await ctx.send('>>> 안녕하세요! 코코봇이에요^^* ''!도움'' 이라는 명령어로 명령어 목록을 보여줄게요')
 
 @bot.command()
 async def 누구(ctx):
-    await ctx.send('>>> 도박을 하고싶은데 돈이없어서 만든 봇이에요.')    
+    await ctx.send('>>> 도박을 하고싶은데 돈이없어서 만든 봇이에요')    
 
 @bot.command()
 async def 돈줘(ctx):
@@ -64,13 +64,27 @@ async def 도박(ctx, amount: int):
         await ctx.send(f'>>> {ctx.author.mention}, 아쉽게도 {amount}원을 잃었습니다. 현재 잔액: {user_balances[user_id]}원')
 
 @bot.command()
+async def 따라해(ctx, *, message):
+    try:
+        await ctx.message.delete()  # 사용자의 메시지를 삭제
+    except discord.Forbidden:
+        await ctx.send("메시지를 삭제할 권한이 없습니다.")  # 권한이 없을 때 메시지 출력
+    await ctx.send(f'>>> {message}')  # 봇이 사용자의 메시지를 따라함
+
+@bot.command()
+async def 권한확인(ctx):
+    permissions = ctx.channel.permissions_for(ctx.guild.me)
+    await ctx.send(f'봇의 메시지 삭제 권한: {permissions.manage_messages}')
+    
+@bot.command()
 async def 도움(ctx):
     help_message = (
         '>>> 다음은 명령어 목록이에요. 필요한 명령어를 입력해보세요.\n'
         '1. !안녕\n'
         '2. !누구\n'
         '3. !돈줘\n'
-        '4. !도박'
+        '4. !도박\n'
+        '5. !따라해 [메시지]'
     )
     await ctx.send(help_message)
 
